@@ -1,0 +1,440 @@
+/******************** General Styling *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.text {
+  color: #748182;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: black !important;
+}
+/******************** End General Styling *********************/
+
+/******************** Navbar *********************************/
+
+nav .logo {
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav li a:hover,
+.active {
+  text-decoration: underline;
+}
+/******************** End Navbar *********************/
+
+/******************** Header ************************/
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,.6)), 
+              url(../img/bg.jpg) no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+}
+
+header section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+header section h2 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+header section h1 {
+  font-weight: 200;
+  font-size: 60px;
+}
+
+header section .icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+header section .icons a {
+  background-color: rgba(0,0,0,.6);
+  color: #fff;
+  margin-right: 5px;
+  padding: 2px 7px;
+  border-radius: 50%;
+}
+/******************** End Header *********************/
+
+/******************** About *************************/
+.about-section {
+  margin-top: 3rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section .inside-about {
+  margin-top: -50px;
+  margin-left: 30px;
+}
+
+.about-section img {
+  width: 40%;
+}
+
+.about-section .section-content {
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-section .section-content h3 {
+  font-weight: 800;
+  font-size: 30px;
+  color: #343434;
+}
+
+.about-section .intro {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+
+.about-section .skills .progress,
+.about-section .skills .progress-bar {
+  height: 25px;
+}
+
+.about-section .skills .progress-bar .fst-part {
+  text-align: left !important;
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.about-section .skills .progress-bar .scnd-part {
+  text-align: right !important;
+  padding-right: 5px;
+}
+
+.about-section .skills .item-1 {
+  margin-top: 20px;
+}
+.about-section .skills .item-2 {
+  margin-top: 30px;
+}
+
+.about-section .skills .item-3 {
+  margin-top: 30px;
+}
+
+.about-buttons .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-top: 50px;
+  padding: 8px 20px;
+}
+
+.about-buttons .fst-btn {
+  transition: all 1s ease;
+}
+
+.about-buttons .scnd-btn {
+  border: 1px solid black;
+  transition: all 1s ease;
+}
+
+.about-buttons .fst-btn:hover {
+  background-color: #fff !important;
+  color: black;
+} 
+
+.about-buttons .scnd-btn:hover {
+  background-color: black !important;
+  color: #fff;
+}
+/******************** End About *************************/
+
+/******************** Services *************************/
+.services {
+  background-color: #F7F7F7;
+  padding: 100px 0;
+}
+
+.services .item {
+  padding: 50px 20px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.services i {
+  background-color: #F7F7F7;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+
+.services i:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.services h6 {
+  font-weight: 800;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/******************** End Services *************************/
+
+/******************** Portfolio *************************/
+.portfolio a {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.portfolio img {
+  position: relative;
+}
+
+.portfolio .img-overlay {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0%, 1%);
+  transition: all 1s;
+}
+
+.portfolio .img-overlay-2 {
+  background-color: #fff;
+  width: 90%;
+  height: 97%;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0%, 1%);
+  transition: all 1s;
+}
+
+.portfolio .img-overlay h6,
+.portfolio .img-overlay-2 h6  {
+  font-size: 12px;
+  letter-spacing: 2px;
+  transform: translate(0%, -100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.portfolio .img-overlay .icons,
+.portfolio .img-overlay-2 .icons {
+  transform: translate(0%, 100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.portfolio .img-overlay .icons i,
+.portfolio .img-overlay-2 .icons i {
+  background-color: #000;
+  color: #fff;
+}
+
+.portfolio .img-overlay .icons i:hover,
+.portfolio .img-overlay-2 .icons i:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.portfolio .img-overlay:hover,
+.portfolio img:hover .img-overlay,
+.portfolio .img-overlay-2:hover {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+.portfolio .img-overlay:hover h6 {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.portfolio .img-overlay:hover .icons {
+  transform: translate(0%, 20%);
+  opacity: 1;
+}
+
+.portfolio .img-overlay-2:hover h6 {
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+.portfolio .img-overlay-2:hover .icons {
+  transform: translate(0%, 20%);
+  opacity: 1;
+}
+/******************** /Portfolio *************************/
+
+/******************** Testimonials *************************/
+.testimonials {
+  background-color: #F7F7F7;
+}
+
+.testimonials img {
+  width: 8%;
+}
+
+.testimonials .customer-title {
+  font-weight: 600;
+  font-size: 12px;
+  color: #888;
+}
+/******************** /Testimonials *************************/
+
+/******************** Numbers *************************/
+.numbers .num {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.numbers .num-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #748182;
+}
+
+/******************** /Numbers *************************/
+
+/******************** Blog *************************/
+.blog {
+  padding: 0 35px;
+  background-color: #F7F7F7;
+}
+
+.blog .image{
+  overflow: hidden ;
+}
+
+.blog .card img:hover {
+  transition: all 1s;
+}
+
+.blog .card img:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.blog .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #888;
+}
+
+.blog .card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #343434;
+  padding-right: 0px;
+}
+
+.blog .read-more {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+  text-decoration: underline;
+}
+/******************** /Blog *************************/
+
+/******************** Contant *************************/
+.contact {
+  padding: 0 100px;
+}
+
+.contact i {
+  background-color: #F7F7F7;
+  transition: all 1s;
+}
+.contact i:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact form input,
+.contact form textarea{
+  background-color:#f4f4f4;
+}
+
+.contact button {
+  padding: 8px 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  transition: all 1s;
+}
+
+.contact button:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+/******************** /Contant *************************/
+
+/******************** Footer *************************/
+footer {
+  background-color: #000;
+  color: #748182;
+}
