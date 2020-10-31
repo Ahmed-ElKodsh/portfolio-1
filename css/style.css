@@ -89,6 +89,31 @@ header section h1 {
   font-size: 60px;
 }
 
+header section h1 span:before {
+  content: '';
+  animation: animate infinite 10s;
+}
+@keyframes animate {
+  0% {
+    content: 'Frontend';
+  }
+  20% {
+    content: 'Backend';
+  }
+  40% {
+    content: 'Developer';
+  }
+  60% {
+    content: 'Designer';
+  }
+  80% {
+    content: 'Photographer';
+  }
+  100% {
+    content: 'Freelancer';
+  }
+}
+
 header section .icons {
   display: flex;
   flex-direction: row;
